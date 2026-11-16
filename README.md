@@ -1,3 +1,5 @@
+![pairseal — Verified document extraction](banner.svg)
+
 # pairseal
 
 **Verified field extraction from document images — free, with your own model keys.**
