@@ -1,0 +1,221 @@
+{
+  "schema_version": "1.1",
+  "tool": {
+    "name": "pairseal",
+    "version": "0.1.0"
+  },
+  "run_id": "6447e080-b5b7-4630-abba-7cd35ba1e354",
+  "recorded_at": "2026-11-16T04:53:26.645746+00:00",
+  "doc_type": "invoice",
+  "doc_type_source": "user",
+  "image": {
+    "sha256": "99f59764e5bba9e9e6b9e0659e679654753ae8953ac1b8671f3adcf284127048",
+    "bytes": 35807,
+    "media_type": "image/png"
+  },
+  "source": {
+    "url": "selftest://invoice_clean",
+    "retailer": null,
+    "posted_at": null,
+    "note": "fault-injection self-test fixture"
+  },
+  "evaluation_date": "2026-12-02",
+  "pair": {
+    "readers": [
+      {
+        "provider": "scripted",
+        "family": "scripted",
+        "model_requested": "scripted-a",
+        "model_reported": "scripted-a"
+      },
+      {
+        "provider": "scripted",
+        "family": "scripted",
+        "model_requested": "scripted-b",
+        "model_reported": "scripted-b"
+      }
+    ],
+    "same_provider": true,
+    "same_family": true,
+    "distance": "same_family"
+  },
+  "reads": [
+    {
+      "reader": {
+        "provider": "scripted",
+        "family": "scripted",
+        "model_requested": "scripted-a",
+        "model_reported": "scripted-a"
+      },
+      "status": "ok",
+      "error": null,
+      "raw_text": "{\"doc_type\": \"invoice\", \"unreadable\": false, \"validity_text\": null, \"fields\": {\"vendor\": {\"value\": \"Acme Office Supply Co\", \"value_text\": \"Acme Office Supply Co\"}, \"invoice_number\": {\"value\": \"INV-2026-1042\", \"value_text\": \"INV-2026-1042\"}, \"invoice_date\": {\"value\": \"12/01/2026\", \"value_text\": \"12/01/2026\"}, \"tax\": {\"value\": 6.68, \"value_text\": \"$6.68\"}, \"total\": {\"value\": 90.18, \"value_text\": \"$90.18\"}}, \"items\": [{\"name\": \"Printer Paper Case\", \"value\": 45.0, \"value_text\": \"$45.00\", \"unit\": null, \"qty\": 2}, {\"name\": \"Toner Cartridge\", \"value\": 38.5, \"value_text\": \"$38.50\", \"unit\": null, \"qty\": 1}]}",
+      "raw_redacted": false,
+      "parsed": {
+        "doc_type": "invoice",
+        "unreadable": false,
+        "validity_text": null,
+        "fields": {
+          "vendor": {
+            "value": "Acme Office Supply Co",
+            "raw": "Acme Office Supply Co",
+            "ambiguous": false
+          },
+          "invoice_number": {
+            "value": "INV-2026-1042",
+            "raw": "INV-2026-1042",
+            "ambiguous": false
+          },
+          "invoice_date": {
+            "value": "2026-12-01",
+            "raw": "12/01/2026",
+            "ambiguous": false
+          },
+          "tax": {
+            "value": 668,
+            "raw": 6.68,
+            "ambiguous": false
+          },
+          "total": {
+            "value": 9018,
+            "raw": 90.18,
+            "ambiguous": false
+          }
+        },
+        "items": [
+          {
+            "name": "Printer Paper Case",
+            "price_cents": 4500,
+            "ambiguous": false,
+            "unit": null,
+            "qty": 2.0
+          },
+          {
+            "name": "Toner Cartridge",
+            "price_cents": 3850,
+            "ambiguous": false,
+            "unit": null,
+            "qty": 1.0
+          }
+        ]
+      },
+      "usage": null
+    },
+    {
+      "reader": {
+        "provider": "scripted",
+        "family": "scripted",
+        "model_requested": "scripted-b",
+        "model_reported": "scripted-b"
+      },
+      "status": "ok",
+      "error": null,
+      "raw_text": "{\"doc_type\": \"invoice\", \"unreadable\": false, \"validity_text\": null, \"fields\": {\"vendor\": {\"value\": \"Acme Office Supply Co\", \"value_text\": \"Acme Office Supply Co\"}, \"invoice_number\": {\"value\": \"INV-2026-1042\", \"value_text\": \"INV-2026-1042\"}, \"invoice_date\": {\"value\": \"12/01/2026\", \"value_text\": \"12/01/2026\"}, \"tax\": {\"value\": 6.68, \"value_text\": \"$6.68\"}, \"total\": {\"value\": 90.18, \"value_text\": \"$90.18\"}}, \"items\": [{\"name\": \"Printer Paper Case\", \"value\": 45.0, \"value_text\": \"$45.00\", \"unit\": null, \"qty\": 2}, {\"name\": \"Toner Cartridge\", \"value\": 38.5, \"value_text\": \"$38.50\", \"unit\": null, \"qty\": 1}]}",
+      "raw_redacted": false,
+      "parsed": {
+        "doc_type": "invoice",
+        "unreadable": false,
+        "validity_text": null,
+        "fields": {
+          "vendor": {
+            "value": "Acme Office Supply Co",
+            "raw": "Acme Office Supply Co",
+            "ambiguous": false
+          },
+          "invoice_number": {
+            "value": "INV-2026-1042",
+            "raw": "INV-2026-1042",
+            "ambiguous": false
+          },
+          "invoice_date": {
+            "value": "2026-12-01",
+            "raw": "12/01/2026",
+            "ambiguous": false
+          },
+          "tax": {
+            "value": 668,
+            "raw": 6.68,
+            "ambiguous": false
+          },
+          "total": {
+            "value": 9018,
+            "raw": 90.18,
+            "ambiguous": false
+          }
+        },
+        "items": [
+          {
+            "name": "Printer Paper Case",
+            "price_cents": 4500,
+            "ambiguous": false,
+            "unit": null,
+            "qty": 2.0
+          },
+          {
+            "name": "Toner Cartridge",
+            "price_cents": 3850,
+            "ambiguous": false,
+            "unit": null,
+            "qty": 1.0
+          }
+        ]
+      },
+      "usage": null
+    }
+  ],
+  "window": null,
+  "fields": [
+    {
+      "name": "vendor",
+      "redacted": false,
+      "value": "Acme Office Supply Co"
+    },
+    {
+      "name": "invoice_number",
+      "redacted": false,
+      "value": "INV-2026-1042"
+    },
+    {
+      "name": "invoice_date",
+      "redacted": false,
+      "value": "2026-12-01"
+    },
+    {
+      "name": "tax",
+      "redacted": false,
+      "value": 668
+    },
+    {
+      "name": "total",
+      "redacted": false,
+      "value": 9018
+    }
+  ],
+  "tuples": [
+    {
+      "name": "Printer Paper Case",
+      "price_cents": 4500,
+      "price": 45.0,
+      "unit": null,
+      "qty": 2.0,
+      "name_a": "Printer Paper Case",
+      "name_b": "Printer Paper Case"
+    },
+    {
+      "name": "Toner Cartridge",
+      "price_cents": 3850,
+      "price": 38.5,
+      "unit": null,
+      "qty": 1.0,
+      "name_a": "Toner Cartridge",
+      "name_b": "Toner Cartridge"
+    }
+  ],
+  "refusals": [],
+  "outcome": "sealed",
+  "counts": {
+    "sealed_fields": 5,
+    "sealed_items": 2,
+    "refused": 0
+  }
+}
