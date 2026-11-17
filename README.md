@@ -8,6 +8,14 @@ Send pairseal a photo or scan of an invoice, a bank check, a receipt, a retail f
 
 Commercial document-extraction APIs charge roughly $0.08–0.30 per document for receipts and invoices, and their catalogues stop there: no flyer product, no agreement gate, no refusal semantics, no validity windows. pairseal is the free, multipurpose alternative: it runs entirely with **your own provider keys** (free tiers work), and images go only to the providers you configure.
 
+## Quickstart
+
+```bash
+git clone https://github.com/ranadhir19/pairseal.git
+cd pairseal
+pip install .            # core: Python >= 3.10, standard library only
+```
+
 ## Why a gate, not just an extractor
 
 Vision models read images well. What they do not do is tell you when they have misread one — and in a price or amount field, a misread is not a typo, it is a wrong number served as fact. pairseal's answer is structural:
